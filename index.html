@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,20 @@
 <body>
     <section class="container">
         <form class="formulario">
-            <label class="input-label">
-                Nome
-                <input class="input" type="text" placeholder="Coloque seu nome">
-            </label>
-            <label class="input-label">
-                Estado
-                <input class="input" type="text" placeholder="Coloque seu estado">
-            </label>
-            <label class="input-label">
-                Data de nascimento
-                <input class="input" type="date" >
-            </label>
+            <div class="input-div">
+                <p>Nome</p>
+                <input class="input nome requerid" type="text" placeholder="Coloque seu nome" required>
+                <span  class="erroNome"></span>
+            </div>
+            <div class="input-div">
+                <p>E-mail</p>
+                <input class="input email requerid" type="email" placeholder="Coloque seu E-mail" required>
+                <span  class="erroEmail"></span>
+            </div>
+            <div class="input-div">
+                <p>Data de nascimento</p>
+                <input class="input data" type="date" >
+            </div>
             <button class="botao">enviar</button>
         </form>
     </section>

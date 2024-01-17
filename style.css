@@ -25,6 +25,9 @@ width: 500px;
 background-color: #4169E1;
 border-radius: 10px;
 }
+input:invalid{
+    border: 2px solid red;
+}
 .input{
     text-decoration: none;
     width: 400px;
@@ -33,7 +36,7 @@ border-radius: 10px;
     border: 2px solid #fff;
     border-radius: 8px;
 }
-.input-label{
+.input-div{
     display:flex;
     flex-direction: column;
     text-align: center;
